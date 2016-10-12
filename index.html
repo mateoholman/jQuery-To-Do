@@ -7,27 +7,29 @@
   <meta name="description" content="A jQuery To-Do list application">
   <meta name="author" content="Matthew Holman">
 
-  <title>To Do</title>
+  <title>To-Do List</title>
 
   <!-- Custom Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption|Shrikhand|Cardo|Tinos" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption|Shrikhand|Cardo" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
   <div id="content">
-    <div class="header">TO DO</div>
+    <div class="header">To-Do List</div>
+    <hr class="short">
     <form>
       <input type="text" id="todo">
-      <input type="submit" value="Submit">
+      <input type="submit" value="Add">
     </form>
-    <ul id="todo-list">
-    </ul>
+    <hr class="short">
+    <ul id="todo-list"></ul>
   </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://use.fontawesome.com/53615a1209.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

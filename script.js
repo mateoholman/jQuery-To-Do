@@ -15,8 +15,10 @@ $(document).ready(function() {
       //SPEC 2:
       var todoText = $(this).find('#todo').val();
 
-      //SPEC 3:
-      $('#todo-list').append('<li><input type="checkbox">' + todoText + '</li>');
+      //Append our new item to the current list.
+      $('#todo-list').append('<li><i class="fa fa-times-circle" aria-hidden="true"></i>' + todoText + '</li>');
+      //Clear the current text box text
+      $('input[type="text"], textarea').val('');
 
     });//!('form').submit()
 

@@ -3,59 +3,79 @@
   outline: 0 !important;
 }
 
+body {
+  background-color: #79CDCD;
+}
+
+form {
+    text-align: left;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+input[type="submit"] {
+    padding:5px 0;
+    text-align: center;
+    background:#7ebbd5;
+    border: 1px solid black;
+    -webkit-border-radius: 0px;
+    border-radius: 5px;
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    font-size: 14px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+input[type=text] {
+    padding:6px;
+    border:1px solid black;
+    -webkit-border-radius: 0px;
+    border-radius: 5px;
+    width: 65%;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+}
+
+.short {
+  width: 150px;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+}
+
+.fa-times-circle {
+  color: #cd7979;
+  margin-right: 5px;
+}
+
 #content {
     margin: 0 auto;
     width: 100%;
     max-width: 275px;
 }
 
-.header {
-    text-align: center;
-    margin: 20px;
-    font-size: 40px;
-}
-
-#todo-list {
-    margin: 20px 0;
-    padding: 0;
-}
-
-form {
-    text-align: center;
-}
 
 #todo-list li {
     display: table;
-    margin: 10px auto;
-    padding: 10px 0;
-    border: 1px solid #ccc;
+    margin-top: 5px;
+    padding: 10px 5px;
+    border: 1px solid #000;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    text-align: center;
-    background-color: #fdfdfd;
-    width: 100%;
-}
-
-#todo-list li span {
-    text-align: right;
-}
-
-
-input[type="submit"] {
-    padding:5px 0;
-    text-align: center;
-    background:#ccc;
-    border: 0 none;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    font-size: 14px;
-    width: 20%;
-}
-
-input[type=text] {
-    padding:6px;
-    border:1px solid #ccc;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
+    font-family: 'Cardo', serif;
+    text-align: left;
+    background-color: #b1e2e2;
     width: 65%;
 }
