@@ -3,8 +3,6 @@
 
 $(document).ready(function() {
 
-
-
     //SPEC 4: Make the list sortable
     $('ul').sortable();
 
@@ -16,10 +14,27 @@ $(document).ready(function() {
       var todoText = $(this).find('#todo').val();
 
       //Append our new item to the current list.
-      $('#todo-list').append('<li><i class="fa fa-times-circle" aria-hidden="true"></i>' + todoText + '</li>');
+      $('#todo-list').append('<li><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>' + todoText + '</li>');
       //Clear the current text box text
       $('input[type="text"], textarea').val('');
 
+      //Create a hover event on the Font Awesome icon
+      $('ul li a i').hover(
+        function() {
+          $(this).addClass('icon-hover');
+        },
+        function() {
+          $(this).removeClass('icon-hover');
+      });
+
+      //Create a click event on the Font Awesome icon
+      $('ul li a').click(function(event) {
+        event.preventDefault();
+        $(this).parent().remove();
+      });
+
     });//!('form').submit()
+
+
 
 });//!(document).ready()
